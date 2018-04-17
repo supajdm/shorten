@@ -103,7 +103,7 @@ class Shorten extends DbConnection {
 				$calulating = false;
 			}
 		}
-		return ltrim($return, '0');
+		return ltrim($return, $this->chars[0]);
 	}
 
 	
